@@ -13,6 +13,12 @@ public class Kula {
     
     final double pi = 3.14;
     double r;
+
+    public Kula(double r) {
+        this.r = r;
+    }
+    
+    
     
     public double poleKuli(double r)
     {
@@ -24,7 +30,7 @@ public class Kula {
         return (4/3)*pi*(r*r*r);
     }
     
-    public void pokDaneProstopadloscianu()
+    public void pokDaneKuli()
     {
         System.out.println("Dane Kuli: ");
         System.out.println("promień: "+r);

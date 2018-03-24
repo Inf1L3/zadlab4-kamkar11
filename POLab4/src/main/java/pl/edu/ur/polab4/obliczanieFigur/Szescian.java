@@ -12,6 +12,12 @@ package pl.edu.ur.polab4.obliczanieFigur;
 public class Szescian {
     
     int a;
+
+    public Szescian(int a) {
+        this.a = a;
+    }
+    
+    
     
     public int poleSzescianu(int a)
     {

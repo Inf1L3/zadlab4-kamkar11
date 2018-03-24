@@ -13,6 +13,14 @@ public class Stozek {
     
     double r,l,h;
     final double pi = 3.14;
+
+    public Stozek(double r, double l, double h) {
+        this.r = r;
+        this.l = l;
+        this.h = h;
+    }
+    
+    
     
     public double poleStozka(double r, double l)
     {
@@ -24,7 +32,7 @@ public class Stozek {
         return (1/3)*pi*r*r*h;
     }
     
-     public void pokDaneProstopadloscianu()
+     public void pokDaneStozka()
     {
         System.out.println("Dane Stożka: ");
         System.out.println("promień: "+r);

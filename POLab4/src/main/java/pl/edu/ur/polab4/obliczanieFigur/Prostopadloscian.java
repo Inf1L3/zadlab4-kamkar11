@@ -12,6 +12,14 @@ package pl.edu.ur.polab4.obliczanieFigur;
 public class Prostopadloscian {
     
     int a,b,h;
+
+    public Prostopadloscian(int a, int b, int h) {
+        this.a = a;
+        this.b = b;
+        this.h = h;
+    }
+    
+    
     
     public int poleProstopadloscianu(int a, int b)
     {

@@ -12,6 +12,12 @@ package pl.edu.ur.polab4.obliczanieFigur;
 public class Kwadrat {
     
     int a;
+
+    public Kwadrat(int a) {
+        this.a=a;
+    }
+    
+    
     
     public int poleKwadratu(int a)
     {
