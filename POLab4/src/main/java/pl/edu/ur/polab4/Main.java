@@ -8,6 +8,7 @@ import pl.edu.ur.polab4.obliczanieFigur.Prostokat;
 import pl.edu.ur.polab4.obliczanieFigur.Prostopadloscian;
 import pl.edu.ur.polab4.obliczanieFigur.Stozek;
 import pl.edu.ur.polab4.obliczanieFigur.Szescian;
+import pl.edu.ur.polab4.wprowadzDane.Zadanie5;
 
 public class Main {
 
@@ -104,8 +105,7 @@ public class Main {
             double r = input.nextDouble();
             Kula k1 = new Kula(r);
             k1.pokDaneKuli();
-        } else if (n==7)
-        {
+        } else if (n == 7) {
             System.out.println("Podaj r: ");
             double r = input.nextDouble();
             System.out.println("Podaj l: ");
@@ -114,10 +114,45 @@ public class Main {
             double h = input.nextDouble();
             Stozek st1 = new Stozek(r, l, h);
             st1.pokDaneStozka();
-        }
-        else 
-        {
+        } else {
             System.out.println("Zły wybór !!!");
+        }
+
+        // zad 5
+        Zadanie5 z = new Zadanie5();
+
+        z.wypelnienieTab();
+
+        int abc = 1;
+
+        while (abc == 1) {
+            System.out.println("Podaj co chcesz wykonać: ");
+            System.out.println("1 - Wprowadz dane");
+            System.out.println("2 - Edytuj dane");
+            System.out.println("3 - Usuń dane");
+            System.out.println("4 - Wyświetl dane danego studenta");
+            System.out.println("5 - Wyświetl dane wszystkich studentów");
+            System.out.println("6 - Wyświetl dane studentów z zakresu");
+            System.out.println("0 - Wyjscie");
+            int wybor = input.nextInt();
+
+            if (wybor == 1) {
+                z.wprDane();
+            } else if (wybor == 2) {
+                z.edycjaDanych();
+            } else if (wybor == 3) {
+                z.usunDane();
+            } else if (wybor == 4) {
+                z.wyswietlDane();
+            } else if (wybor == 5) {
+                z.daneStudentow();
+            } else if (wybor == 6) {
+                z.wysZakres();
+            } else if (wybor == 0) {
+                abc = 0;
+            } else {
+                System.out.println("zły wybór!@!@!@");
+            }
         }
 
     }
